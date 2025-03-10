@@ -138,10 +138,22 @@ temp/
 **/production.config.js
 **/production-settings.*
 
-# Sensitive JSON Configs
+# Additional Configuration Protection
 **/config/*.json
-**/settings/*.json
-**/*.config.json
-**/*.secrets.json
-**/auth.json
-!example.config.json
+**/config/credentials.*
+**/config/auth.*
+**/config/openrouter.*
+**/api/config/*
+**/.config/*
+
+# Credentials and Tokens
+**/*credential*.json
+**/*token*.json
+**/*.key
+**/*.pem
+**/*.crt
+
+# Local Configuration
+**/*.local.json
+**/*.local.js
+**/*.local.config.*
